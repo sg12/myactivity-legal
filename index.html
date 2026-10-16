@@ -69,7 +69,7 @@
     <div class="name">MyActivity</div>
   </div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated: 12 October 2026</div>
+  <div class="updated">Last updated: 16 October 2026</div>
 </header>
 
 <p>MyActivity ("the app") is a calendar-first sports activity planner and diary. This page
@@ -77,8 +77,10 @@ explains what data the app handles and how.</p>
 
 <div class="callout">
   <strong>In short:</strong> everything you log in MyActivity — activities, categories,
-  indicators, templates — stays on your device. There's no account, no ads, no analytics SDK,
-  and no server we operate that any of it is ever sent to.
+  indicators, templates, sleep entries and Health data — stays on your device and is never sent
+  anywhere. There's no account and no ads. The only thing the app sends is a short list of
+  anonymous usage events (for example, "the app was opened" or "an activity was logged"), tied to
+  a random installation id — never your activities, durations, sleep, steps or any health data.
 </div>
 
 <h2>Data stays on your device</h2>
@@ -98,6 +100,32 @@ Security → Health</strong> on your device.</p>
 <p>On Android, if you connect Health Connect from the app's Reports screen, the app only reads your step count to show it in reports. The data never leaves your device and nothing is written to Health Connect. Sleep entries you add are stored on your device only.</p>
 
 
+<h2>Anonymous usage analytics</h2>
+<p>Starting with version 1.0.3, the app sends a small number of anonymous usage events to help us
+understand which parts of the app are used and where people stop using it, so we can improve it.
+This includes only:</p>
+<ul>
+  <li>A randomly generated, pseudonymous installation identifier created by the app itself. It is
+  not linked to your name, account, advertising identifier, device identifier, or any other
+  personal information.</li>
+  <li>Event names: the app was installed (first opened), the app was opened, an activity was
+  logged, a sleep entry was logged (including "first activity / first sleep entry logged"), and a
+  session ended (with only its length in seconds).</li>
+  <li>The app version and the number of days since installation.</li>
+</ul>
+<p>These events <strong>never</strong> include activity names or categories, durations, distances,
+sleep times or quality, steps, heart rate, weight or any other indicator values, notes, templates,
+dates of your entries, or any data read from Apple Health or Health Connect. Health data is not
+used for analytics, advertising or any other purpose beyond showing it to you in the app. No
+location, contacts or advertising identifier is collected.</p>
+<p>The events are processed on our behalf by PostHog, Inc. (product analytics) in its EU cloud,
+hosted in Frankfurt, Germany. As with any internet request, PostHog's servers receive your
+device's IP address when events are sent; we do not use it to identify you. We keep analytics
+events only as long as needed for this purpose and no longer than 12 months. This data is not
+used to track you across apps or websites, and it is not sold or shared with advertisers. If no
+internet connection is available, events wait on the device and are sent later; the app works
+fully offline.</p>
+
 <h2>Notifications</h2>
 <p>Reminders you configure — for a scheduled activity, or the optional daily check-in — are
 scheduled locally on your device using iOS's notification system. No push-notification server
@@ -114,21 +142,24 @@ choice — we have no visibility into it.</p>
 
 <h2>What we don't do</h2>
 <ul>
-  <li>No analytics or crash-reporting SDKs</li>
+  <li>No crash-reporting SDKs, and no analytics beyond the anonymous usage events described above</li>
   <li>No advertising or ad-tracking SDKs</li>
   <li>No account creation, no sign-in</li>
   <li>No sale or sharing of your data with third parties</li>
-  <li>No collection of your data by the developer, in any form</li>
+  <li>No collection of your activity, sleep or health data by the developer, in any form</li>
 </ul>
 
 <h2>Data deletion</h2>
 <p>You can delete individual entries at any time from within the app. Deleting the app from your
 device permanently deletes its local database, including all activities, indicators, and
-templates.</p>
+templates, together with the random installation identifier. Analytics events already sent cannot
+be linked back to you. If you still want them removed, email us (see Contact) and we will delete
+the analytics data for your installation on request.</p>
 
 <h2>Children's privacy</h2>
 <p>The app does not knowingly collect personal information from anyone, including children,
-because it does not collect personal information at all — everything stays on-device.</p>
+because it does not collect personal information at all — everything you enter stays on-device,
+and the anonymous usage events described above contain no personal information about anyone.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the "Last updated" date above will change accordingly. Continued use
@@ -147,7 +178,7 @@ of the app after a change constitutes acceptance of the revised policy.</p>
     <div class="name">MyActivity</div>
   </div>
   <h1>Политика конфиденциальности</h1>
-  <div class="updated">Обновлено: 12 октября 2026</div>
+  <div class="updated">Обновлено: 16 октября 2026</div>
 </header>
 
 <p>MyActivity («приложение») — календарный планировщик и дневник спортивной активности. Эта
@@ -155,8 +186,11 @@ of the app after a change constitutes acceptance of the revised policy.</p>
 
 <div class="callout">
   <strong>Коротко:</strong> всё, что вы вносите в MyActivity — активности, категории,
-  показатели, шаблоны — остаётся на вашем устройстве. Нет аккаунта, нет рекламы, нет SDK
-  аналитики и нет сервера, на который что-либо из этого отправлялось бы.
+  показатели, шаблоны, записи сна и данные о здоровье — остаётся на вашем устройстве и никуда не
+  отправляется. Нет аккаунта и нет рекламы. Единственное, что отправляет приложение, — короткий
+  список анонимных событий использования (например, «приложение открыто» или «добавлена
+  активность»), привязанных к случайному идентификатору установки, — и никогда не ваши
+  активности, длительности, сон, шаги или любые данные о здоровье.
 </div>
 
 <h2>Данные остаются на вашем устройстве</h2>
@@ -176,6 +210,32 @@ of the app after a change constitutes acceptance of the revised policy.</p>
 <p>На Android, если вы подключите Health Connect на экране отчётов, приложение только читает количество шагов, чтобы показать их в отчётах. Данные не покидают устройство, и ничего не записывается в Health Connect. Записи о сне, которые вы вводите, хранятся только на устройстве.</p>
 
 
+<h2>Анонимная аналитика использования</h2>
+<p>Начиная с версии 1.0.3 приложение отправляет небольшое количество анонимных событий
+использования, чтобы мы понимали, какими частями приложения пользуются и на каком шаге люди
+перестают им пользоваться, и могли его улучшать. Отправляется только:</p>
+<ul>
+  <li>случайный псевдонимный идентификатор установки, который создаёт само приложение; он не
+  связан с вашим именем, аккаунтом, рекламным идентификатором, идентификатором устройства или
+  другими личными данными;</li>
+  <li>названия событий: приложение установлено (первый запуск), приложение открыто, добавлена
+  активность, добавлена запись сна (в том числе «первая активность / первая запись сна»), сессия
+  завершена (только её длительность в секундах);</li>
+  <li>версия приложения и число дней с момента установки.</li>
+</ul>
+<p>Эти события <strong>никогда</strong> не содержат названий и категорий активностей,
+длительности, дистанции, времени и качества сна, шагов, пульса, веса и других показателей,
+заметок, шаблонов, дат ваших записей или каких-либо данных из Apple Health или Health Connect.
+Данные о здоровье не используются для аналитики, рекламы или любых других целей, кроме показа их
+вам в приложении. Геолокация, контакты и рекламный идентификатор не собираются.</p>
+<p>События обрабатывает по нашему поручению PostHog, Inc. (сервис продуктовой аналитики) в своём
+облаке в ЕС, размещённом во Франкфурте (Германия). Как и при любом интернет-запросе, серверы
+PostHog видят IP-адрес вашего устройства в момент отправки; мы не используем его, чтобы вас
+идентифицировать. Мы храним события аналитики только столько, сколько нужно для этой цели, и не
+дольше 12 месяцев. Эти данные не используются для отслеживания вас в других приложениях и на
+сайтах, не продаются и не передаются рекламодателям. Если интернета нет, события ждут на
+устройстве и отправляются позже; приложение полностью работает без сети.</p>
+
 <h2>Уведомления</h2>
 <p>Настроенные вами напоминания — о запланированной активности или ежедневное напоминание —
 планируются локально средствами системы уведомлений iOS. Сервер push-уведомлений не
@@ -192,21 +252,24 @@ of the app after a change constitutes acceptance of the revised policy.</p>
 
 <h2>Чего мы не делаем</h2>
 <ul>
-  <li>Не используем SDK аналитики или сбора крашей</li>
+  <li>Не используем SDK сбора крашей и никакой аналитики, кроме описанных выше анонимных событий использования</li>
   <li>Не используем рекламные SDK и трекинг</li>
   <li>Не требуем регистрации или входа в аккаунт</li>
   <li>Не продаём и не передаём ваши данные третьим лицам</li>
-  <li>Не собираем ваши данные в каком-либо виде</li>
+  <li>Не собираем данные о ваших активностях, сне или здоровье в каком-либо виде</li>
 </ul>
 
 <h2>Удаление данных</h2>
 <p>Вы можете удалить любую запись прямо в приложении в любой момент. Удаление приложения с
 устройства безвозвратно удаляет его локальную базу данных, включая все активности, показатели и
-шаблоны.</p>
+шаблоны, а также случайный идентификатор установки. Уже отправленные события аналитики нельзя
+связать с вами. Если вы всё же хотите их удалить, напишите нам (см. «Контакты») — мы удалим
+данные аналитики вашей установки по запросу.</p>
 
 <h2>Конфиденциальность детей</h2>
 <p>Приложение не собирает персональные данные ни у кого, включая детей, поскольку не собирает
-персональные данные вообще — всё остаётся на устройстве.</p>
+персональные данные вообще — всё, что вы вносите, остаётся на устройстве, а описанные выше
+анонимные события использования не содержат персональных данных ни о ком.</p>
 
 <h2>Изменения политики</h2>
 <p>При изменении этой политики дата «Обновлено» выше будет обновлена соответствующим образом.
